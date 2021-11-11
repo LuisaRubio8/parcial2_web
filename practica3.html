@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro de trabajadores.</title>
+</head>
+<body>
+	<h2 style='color:red;'>Rubio Cabanillas Luisa Fernanda.</h2>
+	<h2 style='color:green;'>5AVP.</h2>
+	<h1 style='color:#E37849'>Formulario de registro de trabajadores.</h1><hr>
+	<form method="GET" action="practica3.php">
+	<label for="">Nombre del trabajador:</label><br>
+	<input type="text" name="nombre" placeholder="Nombre..." required><br><br>
+
+	<label for="Años trabajando:">Años Trabajando:</label><br>
+	<input type="number" name="tiempo_trabajando" placeholder="Tiempo..." required><br><br>
+
+	<label for="Correo">Correo electrónico:</label><br>
+	<input type="email" name="correo" placeholder="Correo..." required><br><br>
+
+	<label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+	<input type="date" name="fecha_nacimiento" required=""><br><br>
+
+	<label for="sexo">Sexo:</label><br>
+	femenino: <input type="radio" name="sexo" value="femenino"><br>
+	masculino: <input type="radio" name="sexo" value="masculino"><br>
+	Otro: <input type="radio" name="sexo" value="otro"><br><br>
+
+
+	<label for="areas">Areas de trabajo:</label><br>
+	<input type="checkbox" name="areas[]" value="Programacion"> Programacion. <br>
+	<input type="checkbox" name="areas[]" value="venta"> Venta. <br>
+	<input type="checkbox" name="areas[]" value="contabilidad"> Contabilidad. <br>
+	<input type="checkbox" name="areas[]" value="distribucion"> Distribucion. <br><br>
+
+	<input type="submit" value="Enviar cuestionario">
+	</form>
+</body>
+</html>
